@@ -1,0 +1,1 @@
+from supercap-py.supercapacitormodel import SuperCapacitorModel
