@@ -2,13 +2,13 @@ from distutils.core import setup
 setup(
   name = 'supercap-py',
   packages = ['supercap-py'],
-  version = '0.1',
+  version = '0.2',
   license='MIT',
   description = 'Supercapacitor Modelling package for Python',   
   author = 'Daniel Lavin and Venkatesh Pampana',
   author_email = 'venkatmr.perfect@gmail.com',
   url = 'https://github.com/venkat0249/SuperCap-Python',
-  download_url = 'https://github.com/venkat0249/SuperCap-Python/archive/v_01.tar.gz',
+  download_url = 'https://github.com/venkat0249/SuperCap-Python/archive/v_02.tar.gz',
   keywords = ['supercapacitor', 'energy', 'simulation','modelling','model'],
   install_requires=[ 
           'pandas',
