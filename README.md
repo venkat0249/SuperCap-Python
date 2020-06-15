@@ -1,9 +1,9 @@
-# Welcome to supercap!
+# SuperCap-Python!
 
-Supercapacitor modelling library for Python
+A Supercapacitor modelling library for Python
 
 # Overview
-<moreinfo coming soon>
+SuperCap-Python, a toolset for super capacitor modelling and simulation consisting of Python packages. It can be used to performing high-fidelity simulations of charge, discharge and self-discharge processes of super capacitors.
 
 
 ## Usage
@@ -12,7 +12,7 @@ Supercapacitor modelling library for Python
 
 ###  Getting it
 
-To download scrapeasy, either fork this github repo or simply use Pypi via pip.
+To download SuperCap-Python, either fork this github repo or simply use Pypi via pip.
 ```sh
 $ pip install supercap
 ```
