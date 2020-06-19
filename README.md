@@ -16,7 +16,9 @@ $ pip install supercap
 
 Sample usage example can be found in examples folder. 
 
-##Roadmap and future work
+![example1](/examples/example1_output.png)
+
+## Roadmap and future work
 
 * Implement more equivalent circuit models available in literature
 * Implement models that also consider Electrochemical properties of super capacitor
