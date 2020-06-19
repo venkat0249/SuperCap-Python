@@ -7,9 +7,9 @@ def main():
 	#initialize capacitor-1 with its nameplate details
 	mysupercap1 = {
 		'leakcurrent' : 500e-4*3, #in A
-		'capacitance' : 40*3, # in F
+		'capacitance' : 400*3, # in F
 		'ratedcurrent' : 10*3, # in A
-		'initialvoltage' : 70*3, # in V
+		'initialvoltage' : 0*3, # in V
 		'ratedvoltage' : 70*3, # in V
 		'esr' : 0.55*3 # in ohms
 		}
@@ -17,18 +17,18 @@ def main():
 	mysupercap2 = {
 		'leakcurrent' : 400e-4*3, #in A
 		'capacitance' : 60*3, # in F
-		'ratedcurrent' : 15*3, # in A
-		'initialvoltage' : 40*3, # in V
+		'ratedcurrent' : 25*3, # in A
+		'initialvoltage' : 0*3, # in V
 		'ratedvoltage' : 75*3, # in V
 		'esr' : 0.55*3 # in ohms
 		}
 
 	#The following lines allow to generate a test charge and discharge process for the supercapacitor2
-	testsc = SuperCapacitorModel(mysupercap2)
+	testsc = SuperCapacitorModel(mysupercap1)
 	 
 	testsc.set_timedelta(dtt.timedelta(seconds=1))
 	 
-	for i in range(0,1000):
+	for i in range(0,2000):
 		testsc.charge_ctP(100)
 	for i in range(0,500):
 		testsc.selfdischarge()
@@ -51,15 +51,15 @@ def main():
 	 
 	testsc2.set_timedelta(dtt.timedelta(seconds=1))
 	 
-	for i in range(0,1000):
+	for i in range(0,2000):
 		testsc2.charge_ctP(100)
-	for i in range(0,70):
+	for i in range(0,500):
 		testsc2.selfdischarge()
-	for i in range(0,1200):
+	for i in range(0,1500):
 		testsc2.discharge_ctP(100) 
 	for i in range(0,1000):
 		testsc2.charge_ctI(2)
-	for i in range(0,70):
+	for i in range(0,75):
 		testsc2.selfdischarge()
 	for i in range(0,1000):
 		testsc2.discharge_ctI(3) 
